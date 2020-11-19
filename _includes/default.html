@@ -8,14 +8,18 @@
   <link rel="stylesheet" href="tailwind.css" />
   <script src="alpine.js" defer></script>
   <style>
-    *:not(path):not(g) {
+    *:not(path):not(g):not(section) {
       outline: solid 1px #4AF626 !important;
+    }
+    section {
+      outline: dashed 2px red !important;
     }
   </style>
 </head>
 
-<body class="bg-gray-900">
+<body class="bg-body max-w-screen-lg m-auto">
   {% include header.html %}
+  {{ content }}
 </body>
 
 </html>

@@ -1,7 +1,8 @@
-<header class="bg-gray-900 sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-3" x-data="{ isOpen: false }">
+<header class="sticky top-0 bg-gray-900 sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-3"
+  x-data="{ isOpen: false }">
   <div class="flex items-center justify-between px-4 py-3 sm:p-0 border-b-2 border-gray-100">
     <div>
-      <img class="h-8" src="static/images/logo-inverted.svg" alt="Workcation">
+      <img class="h-8" src="static/images/logo.svg" alt="Workcation">
     </div>
     <div class="sm:hidden">
       <button @click="isOpen = !isOpen" type="button"
@@ -15,10 +16,12 @@
     </div>
   </div>
   <nav :class="isOpen ? 'flex flex-col' : 'hidden'" class="px-2 pt-2 pb-4 sm:flex sm:p-0">
-    <a href="#" class="block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800">List your property</a>
+    <a href="#" class="block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800">Uno</a>
+    <a href="#" class="mt-1 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2">Dos</a>
+    <a href="#" class="mt-1 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2">Tres</a>
+    <a href="#" class="block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800">Cuatro</a>
     <a href="#"
-      class="mt-1 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2">Trips</a>
-    <a href="#"
-      class="mt-1 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2">Messages</a>
+      class="mt-1 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2">Cinco</a>
+    <a href="#" class="mt-1 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2">Seis</a>
   </nav>
 </header>

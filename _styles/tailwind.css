@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
+.bg-body {
+  background-image: linear-gradient(#000000, #006fbb);
+}
+.bg-hero {
+  background-image: linear-gradient(#006fbe, #1ba9e3);
+}
 @tailwind utilities;
