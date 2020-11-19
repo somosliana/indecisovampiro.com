@@ -7,12 +7,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover" />
   <link rel="stylesheet" href="tailwind.css" />
   <script src="alpine.js" defer></script>
+  <style>
+    *:not(path):not(g) {
+      outline: solid 1px #4AF626 !important;
+    }
+  </style>
 </head>
 
-<body>
-  <main class="bg-gray-800 flex flex-col h-screen items-center justify-center w-full">
-    {{ content }}
-  </main>
+<body class="bg-gray-900">
+  {% include header.html %}
 </body>
 
 </html>

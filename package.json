@@ -6,6 +6,7 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1",
+    "@fortawesome/fontawesome-free": "^5.15.1",
     "alpinejs": "^2.7.3",
     "autoprefixer": "^10.0.2",
     "postcss": "^8.1.7",
