@@ -1,27 +1,29 @@
-<header class="sticky top-0 bg-gray-900 sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-3"
-  x-data="{ isOpen: false }">
-  <div class="flex items-center justify-between px-4 py-3 sm:p-0 border-b-2 border-gray-100">
-    <div>
-      <img class="h-8" src="static/images/logo.svg" alt="Workcation">
-    </div>
-    <div class="sm:hidden">
-      <button @click="isOpen = !isOpen" type="button"
-        class="block text-gray-500 hover:text-white focus:outline-none focus:text-white"
-        :class="{ 'transition transform-180': isOpen }">
-        <svg class="h-6 w-6 fill-current">
+<header x-data="{ isOpen: false }">
+  <div class="flex justify-between items-center px-2 py-2">
+    <img class="h-12" src="static/images/logo.svg" alt="" />
+    <div class="flex justify-between items-center gap-2">
+      <a href="#" class="text-gray-100">
+        <svg class="w-6 h-6 fill-current">
+          <use xlink:href="static/sprites/brands.svg#youtube"></use>
+        </svg>
+      </a>
+      <a href="#" class="text-gray-100">
+        <svg class="w-6 h-6 fill-current">
+          <use xlink:href="static/sprites/brands.svg#instagram"></use>
+        </svg>
+      </a>
+      <button class="text-gray-100" @click="isOpen = !isOpen" type="button">
+        <svg class="w-8 h-8 fill-current">
           <use x-show="!isOpen" xlink:href="static/sprites/solid.svg#bars"></use>
           <use x-show="isOpen" xlink:href="static/sprites/solid.svg#times"></use>
         </svg>
       </button>
     </div>
   </div>
-  <nav :class="isOpen ? 'flex flex-col' : 'hidden'" class="px-2 pt-2 pb-4 sm:flex sm:p-0">
-    <a href="#" class="block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800">Uno</a>
-    <a href="#" class="mt-1 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2">Dos</a>
-    <a href="#" class="mt-1 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2">Tres</a>
-    <a href="#" class="block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800">Cuatro</a>
-    <a href="#"
-      class="mt-1 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2">Cinco</a>
-    <a href="#" class="mt-1 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2">Seis</a>
+  <nav class="flex flex-col justify-between gap-3 py-2" :class="isOpen ? 'block' : 'hidden'">
+    {% assign links = "musica, audiovisuales, editorial, encuentros, talleres, juegos, buscar" | split: ',' %}
+    {% for l in links %}
+    <a href="#" class="text-gray-100 uppercase font-semibold px-2">{{ l }}</a>
+    {% endfor %}
   </nav>
 </header>
