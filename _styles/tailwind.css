@@ -1,9 +1,17 @@
 @tailwind base;
 @tailwind components;
+/* BACKGROUNDS */
 .bg-body {
   background-image: linear-gradient(#000000, #006fbb);
 }
 .bg-hero {
   background-image: linear-gradient(#006fbe, #1ba9e3);
+}
+/* WRAPPERS */
+.flex-center {
+  @apply flex items-center justify-center;
+}
+.max-w-content {
+  @apply flex items-center justify-center max-w-screen-lg mx-auto;
 }
 @tailwind utilities;

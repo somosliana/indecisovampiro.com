@@ -11,15 +11,18 @@
     *:not(path):not(g):not(section) {
       outline: solid 1px #4AF626 !important;
     }
+
     section {
       outline: dashed 2px red !important;
     }
   </style>
 </head>
 
-<body class="debug-screens bg-body max-w-screen-lg m-auto text-white">
-  {% include header.html %}
-  {{ content }}
+<body class="debug-screens bg-body text-white">
+  <main class="">
+    {% include header.html %}
+    {{ content }}
+  </main>
 </body>
 
 </html>
