@@ -1,5 +1,9 @@
 @tailwind base;
 @tailwind components;
+/* DEFAULTS */
+svg {
+  @apply fill-current;
+}
 /* BACKGROUNDS */
 .bg-body {
   background-image: linear-gradient(#000000, #006fbb);
@@ -12,6 +16,6 @@
   @apply flex items-center justify-center;
 }
 .max-w-content {
-  @apply flex items-center justify-center max-w-screen-lg mx-auto;
+  @apply max-w-screen-lg mx-auto;
 }
 @tailwind utilities;
