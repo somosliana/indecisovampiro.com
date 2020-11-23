@@ -8,14 +8,14 @@ title: Inicio
 </section>
 
 <!-- Separador -->
-<section class="py-12 max-w-content">
+<section class="py-16 max-w-content">
   <img class="" src="static/images/separador.svg" alt="">
 </section>
 
 <!-- Radio En Vivo -->
 {% comment %}{% endcomment %}
 <section
-  class="flex-center max-w-content flex-col items-stretch p-8 gap-4 sm:grid sm:grid-cols-2 sm:grid-rows-2 sm:grid-flow-col"
+  class="flex-center max-w-content flex-col items-stretch pb-8 gap-4 sm:grid sm:grid-cols-2 sm:grid-rows-2 sm:grid-flow-col"
   <div class="">
   <svg x="0" y="0" viewBox="0 0 100 30" width="100%">
     <foreignObject x="0" y="0" height="100%" width="100%">
@@ -48,9 +48,8 @@ title: Inicio
   </div>
 </section>
 
-
 <!-- Bajate la App -->
-<section class="flex-center max-w-content flex-col items-center p-12 gap-8 sm:hidden">
+<section class="sm:hidden flex-center max-w-content flex-col items-center p-12 gap-8">
   <div class="">
     <h1 class="uppercase text-4xl">Bajate la app</h1>
     <h2 class="text-sm">Y seguí escuchando Radio Vampira sin drama.</h2>
@@ -58,8 +57,7 @@ title: Inicio
   <img class="w-9/12" src="static/images/app.png" alt="">
   <img class="h-10" src="static/images/buttons/google-play.png" alt="">
 </section>
-
-<section class="p-8"
+<section class="hidden sm:block p-8"
   style="background: linear-gradient(to bottom, transparent 0%, transparent 30%, #0E4056 30%, #0E4056 70%, transparent 70%);">
   <div class="flex items-center justify-between gap-4 max-w-content">
     <div class="flex items-center gap-4">
@@ -75,12 +73,12 @@ title: Inicio
 
 <!-- La Radio Que No Duerme -->
 <section class="flex-center max-w-content p-16">
-  <img class="w-1/3" src="static/images/radio-vampira.svg" alt="">
+  <img class="w-2/3 sm:w-1/3" src="static/images/radio-vampira.svg" alt="">
 </section>
 
 <!-- Programacion -->
-<section class="flex flex-col max-w-content p-8 gap-12">
-  <h1 class="">Programación Indecisa</h1>
+<section class="flex flex-col max-w-content p-2 sm:p-12 gap-4">
+  <h1 class="uppercase text-2xl font-semibold md:text-5xl text-gray-700">Programación Indecisa</h1>
   <div class="grid grid-cols-2 gap-1 sm:grid-cols-4 sm:gap-4">
     {% for num in (1..8) %}
     <img src="https://via.placeholder.com/300?text=300x300" alt="">

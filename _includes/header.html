@@ -1,5 +1,5 @@
 <!-- Mobile -->
-<header class="block md:hidden" x-data="{ isOpen: false }">
+<header class="block md:hidden border-b-2 border-white" x-data="{ isOpen: false }">
   <div class="flex-center max-w-content justify-between p-2">
     <img class="h-12" src="static/images/logo.svg" alt="" />
     <div class="flex-center gap-2">
@@ -30,7 +30,7 @@
 </header>
 
 <!-- Desktop -->
-<header class="hidden md:block">
+<header class="hidden md:block border-b-2 border-white">
   <div id="wraper" class="max-w-content flex-center justify-between">
     <div id="left" class="flex-center m-2 gap-5">
       <a href="#">
@@ -47,7 +47,7 @@
     <nav id="middle" class="flex-center justify-between gap-3">
       {% assign links = "música, audiovisuales, editorial, encuentros, talleres, juegos" | split: ',' %}
       {% for l in links %}
-      <a href="#" class="uppercase font-semibold px-2">{{ l }}</a>
+      <a href="#" class="uppercase font-semibold text-lg px-4">{{ l }}</a>
       {% endfor %}
     </nav>
     <div id="right" class="flex-center m-2 gap-5">
