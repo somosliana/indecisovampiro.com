@@ -32,7 +32,7 @@
 <!-- Desktop -->
 <header class="hidden md:block">
   <div id="wraper" class="max-w-content flex-center justify-between">
-    <div id="left" class="flex-center m-2 gap-5 self-start">
+    <div id="left" class="flex-center m-2 gap-5">
       <a href="#">
         <svg class="w-8 h-8">
           <use xlink:href="static/sprites/brands.svg#youtube"></use>
@@ -44,13 +44,13 @@
         </svg>
       </a>
     </div>
-    <nav id="middle" class="self-center flex justify-between gap-3 py-2">
+    <nav id="middle" class="flex-center justify-between gap-3">
       {% assign links = "musica, audiovisuales, editorial, encuentros, talleres, juegos" | split: ',' %}
       {% for l in links %}
       <a href="#" class="uppercase font-semibold px-2">{{ l }}</a>
       {% endfor %}
     </nav>
-    <div id="right" class="flex-center m-2 gap-5 pl-8 self-end">
+    <div id="right" class="flex-center m-2 gap-5">
       <a href="#">
         <svg class="w-8 h-8">
           <use xlink:href="static/sprites/solid.svg#search"></use>
