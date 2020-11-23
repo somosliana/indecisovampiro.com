@@ -22,7 +22,7 @@
     </div>
   </div>
   <nav class="flex flex-col justify-between gap-3" :class="isOpen ? 'block' : 'hidden'">
-    {% assign links = "musica, audiovisuales, editorial, encuentros, talleres, juegos, buscar" | split: ',' %}
+    {% assign links = "música, audiovisuales, editorial, encuentros, talleres, juegos, buscar" | split: ',' %}
     {% for l in links %}
     <a href="#" class=" uppercase font-semibold px-2">{{ l }}</a>
     {% endfor %}
@@ -45,7 +45,7 @@
       </a>
     </div>
     <nav id="middle" class="flex-center justify-between gap-3">
-      {% assign links = "musica, audiovisuales, editorial, encuentros, talleres, juegos" | split: ',' %}
+      {% assign links = "música, audiovisuales, editorial, encuentros, talleres, juegos" | split: ',' %}
       {% for l in links %}
       <a href="#" class="uppercase font-semibold px-2">{{ l }}</a>
       {% endfor %}

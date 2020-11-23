@@ -8,22 +8,24 @@ title: Inicio
 </section>
 
 <!-- Separador -->
-<section class="py-12">
+<section class="py-12 max-w-content">
   <img class="" src="static/images/separador.svg" alt="">
 </section>
 
 <!-- Radio En Vivo -->
-{% comment %}
-<section class="flex-center max-w-content flex-col items-stretch p-8 gap-4">
+{% comment %}{% endcomment %}
+<section
+  class="flex-center max-w-content flex-col items-stretch p-8 gap-4 sm:grid sm:grid-cols-2 sm:grid-rows-2 sm:grid-flow-col"
   <div class="">
-    <svg x="0" y="0" viewBox="0 0 100 30" width="100%">
-      <foreignObject x="0" y="0" height="100%" width="100%">
-        <h1 class="uppercase" style="line-height: normal; font-size: 14px;">Radio en vivo</h1>
-        <h2 class="uppercase" style="line-height: normal; font-size: 5.4px;">Podcast // Música Indecisa // Ruido</h2>
-      </foreignObject>
-    </svg>
+  <svg x="0" y="0" viewBox="0 0 100 30" width="100%">
+    <foreignObject x="0" y="0" height="100%" width="100%">
+      <h1 class="uppercase font-semibold" style="line-height: normal; font-size: 14px;">Radio en vivo</h1>
+      <h2 class="uppercase" style="line-height: normal; font-size: 5.4px; color: #29ABE2;">Podcast // Música Indecisa //
+        Ruido</h2>
+    </foreignObject>
+  </svg>
   </div>
-  <div class="self-center">
+  <div class="flex-center">
     <script type="text/javascript" src="https://hosted.muses.org/mrp.js"></script>
     <script type="text/javascript">
       MRP.insert({
@@ -41,44 +43,55 @@ title: Inicio
       });
     </script>
   </div>
-  <div class="embed-responsive aspect-ratio-4/3">
+  <div class="embed-responsive aspect-ratio-4/3 row-span-full">
     <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/J---aiyznGQ"></iframe>
   </div>
 </section>
-{% endcomment %}
+
 
 <!-- Bajate la App -->
-<section class="flex-center max-w-content flex-col items-stretch p-8 gap-4">
+<section class="flex-center max-w-content flex-col items-center p-12 gap-8 sm:hidden">
   <div class="">
     <h1 class="uppercase text-4xl">Bajate la app</h1>
     <h2 class="text-sm">Y seguí escuchando Radio Vampira sin drama.</h2>
   </div>
-  <img class="" src="static/images/app.png" alt="">
-  <div class="flex justify-around">
-    <img class="h-10" src="static/images/buttons/google-play.png" alt="">
-    <img class="h-10" src="static/images/buttons/google-play.png" alt="">
+  <img class="w-9/12" src="static/images/app.png" alt="">
+  <img class="h-10" src="static/images/buttons/google-play.png" alt="">
+</section>
+
+<section class="p-8"
+  style="background: linear-gradient(to bottom, transparent 0%, transparent 30%, #0E4056 30%, #0E4056 70%, transparent 70%);">
+  <div class="flex items-center justify-between gap-4 max-w-content">
+    <div class="flex items-center gap-4">
+      <img class="w-1/4" src="static/images/app.png" alt="">
+      <div class="">
+        <h1 class="uppercase text-3xl md:text-5xl font-semibold" style="color: #3FA9F5">Bajate la app</h1>
+        <h2 class="text-base md:text-xl">Y seguí escuchando Radio Vampira sin drama.</h2>
+      </div>
+    </div>
+    <img class="h-10 mr-8" src="static/images/buttons/google-play.png" alt="">
   </div>
 </section>
 
 <!-- La Radio Que No Duerme -->
-<section class="flex-center max-w-content p-8">
-  <img class="h-36" src="static/images/radio-vampira.svg" alt="">
+<section class="flex-center max-w-content p-16">
+  <img class="w-1/3" src="static/images/radio-vampira.svg" alt="">
 </section>
 
 <!-- Programacion -->
-<section class="flex-center max-w-content flex-col items-center p-8 gap-4">
-  <h1 class="uppercase text-2xl">Programación Indecisa</h1>
-  <div class="flex flex-wrap">
+<section class="flex flex-col max-w-content p-8 gap-12">
+  <h1 class="">Programación Indecisa</h1>
+  <div class="grid grid-cols-2 gap-1 sm:grid-cols-4 sm:gap-4">
     {% for num in (1..8) %}
-    <img class="w-1/2" src="https://via.placeholder.com/300?text=300x300" alt="">
+    <img src="https://via.placeholder.com/300?text=300x300" alt="">
     {% endfor %}
   </div>
 </section>
 
 <!-- Streaming -->
-<section class="flex-center max-w-content flex-col items-center p-8 gap-6">
+<section class="flex-center max-w-content flex-col items-center p-8 gap-12">
   <div class="flex-center flex-col gap-6">
-    <h1 class="uppercase text-2xl">Streaming Indeciso</h1>
+    <h1 class="uppercase text-2xl sm:text-5xl">Streaming Indeciso</h1>
     <p>¿Sólo escuchas cosas en Spotify? También estamos ahí con la selección de música vampira.
       Podés encontrarlas en nuestra cuenta y lasactualizamos constantemente.</p>
     <img class="" src="static/images/playlist.png" alt="">
@@ -89,9 +102,9 @@ title: Inicio
       </foreignObject>
     </svg>
   </div>
-  <div class="flex flex-wrap px-1">
+  <div class="grid grid-cols-3 sm:grid-cols-6 gap-x-4 gap-y-8">
     {% for num in (1..12) %}
-    <img class="w-1/3" src="https://via.placeholder.com/354x318?text=354x318" alt="">
+    <img src="https://via.placeholder.com/354x318?text=354x318" alt="">
     {% endfor %}
   </div>
   <div class="">
