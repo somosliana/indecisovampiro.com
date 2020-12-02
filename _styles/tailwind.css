@@ -9,9 +9,16 @@ svg {
   @apply fill-current;
 }
 
+section {
+  @apply py-24 px-20;
+}
+
 /* BACKGROUNDS */
 .bg-hero {
   background-image: linear-gradient(#006fbe, #1ba9e3);
+}
+.bg-bajate-la-app {
+  background: linear-gradient(to bottom, transparent 0%, transparent 30%, #0E4056 30%, #0E4056 70%, transparent 70%);
 }
 
 /* WRAPPERS */

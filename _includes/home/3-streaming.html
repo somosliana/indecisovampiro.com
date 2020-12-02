@@ -1,0 +1,58 @@
+<!-- Mobile -->
+<section class="block sm:hidden flex-center max-w-content flex-col items-center gap-12">
+  <div class="flex-center flex-col gap-6">
+    <h1 class="uppercase text-2xl sm:text-5xl">Streaming Indeciso</h1>
+    <p>¿Sólo escuchas cosas en Spotify? También estamos ahí con la selección de música vampira.
+      Podés encontrarlas en nuestra cuenta y lasactualizamos constantemente.</p>
+    <img class="" src="static/images/playlist.png" alt="">
+    <svg x="0" y="0" viewBox="0 0 100 20" width="100%">
+      <foreignObject x="0" y="0" height="100%" width="100%">
+        <h1 class="uppercase" style="line-height: normal; font-size: 10px;">Nuestras Playlists</h1>
+        <h2 class="uppercase" style="line-height: normal; font-size: 5.6px;">Más Música de selección indecisa
+        </h2>
+      </foreignObject>
+    </svg>
+  </div>
+  <div class="grid grid-cols-3 sm:grid-cols-6 gap-x-4 gap-y-8">
+    {% for num in (1..12) %}
+    <img src="https://via.placeholder.com/354x318?text=354x318" alt="">
+    {% endfor %}
+  </div>
+  <div class="">
+    <h1 class="uppercase px-5 text-white rounded-full" style="background-color: #1DB954;">Indeciso Vampiro</h1>
+    <img class="h-8" src="static/images/buttons/spotify.png" alt="">
+  </div>
+</section>
+<!-- Desktop -->
+<section class="hidden sm:block flex-center max-w-content flex-col gap-12 border-t-2 border-green-800">
+  <div class="flex justify-around items-start gap-16 px-2 pb-8">
+    <img class="w-60" src="static/images/playlist.png" alt="">
+    <div class="flex flex-col justify-between">
+      <div>
+        <h1 class="uppercase text-2xl sm:text-5xl font-bold text-gray-700">Streaming Indeciso</h1>
+        <p class="px-6">¿Sólo escuchas cosas en Spotify? También estamos ahí con la selección de música vampira.
+          Podés encontrarlas en nuestra cuenta y lasactualizamos constantemente.</p>
+      </div>
+      <svg class="" x="0" y="0" viewBox="0 0 100 20" width="100%">
+        <foreignObject x="0" y="0" height="100%" width="100%">
+          <h1 class="uppercase font-semibold" style="line-height: normal; font-size: 9px;">Nuestras Playlists
+          </h1>
+          <h2 class="uppercase font-semibold" style="line-height: normal; font-size: 5.25px;">Más Música de
+            selección
+            indecisa</h2>
+        </foreignObject>
+      </svg>
+    </div>
+  </div>
+  <div class="grid grid-cols-3 sm:grid-cols-6 gap-x-4 gap-y-8">
+    {% for num in (1..12) %}
+    <img src="https://via.placeholder.com/354x318?text=354x318" alt="">
+    {% endfor %}
+  </div>
+  <div class="flex my-10 justify-end">
+    <h1 class="uppercase px-5 text-white rounded-full self-stretch" style="background-color: #1DB954;">Indeciso
+      Vampiro
+    </h1>
+    <img class="h-8" src="static/images/buttons/spotify.png" alt="">
+  </div>
+</section>
