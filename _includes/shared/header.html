@@ -1,22 +1,22 @@
 <!-- Mobile -->
 <header class="block md:hidden border-b-2 border-white" x-data="{ isOpen: false }">
   <div class="flex-center max-w-content justify-between p-2">
-    <img class="h-12" src="static/images/logo.svg" alt="" />
+    <img class="h-12" src="/static/images/logo.svg" alt="" />
     <div class="flex-center gap-2">
       <a href="#">
         <svg class="w-6 h-6">
-          <use xlink:href="static/sprites/brands.svg#youtube"></use>
+          <use xlink:href="/static/sprites/brands.svg#youtube"></use>
         </svg>
       </a>
       <a href="#">
         <svg class="w-6 h-6">
-          <use xlink:href="static/sprites/brands.svg#instagram"></use>
+          <use xlink:href="/static/sprites/brands.svg#instagram"></use>
         </svg>
       </a>
       <button @click="isOpen = !isOpen" type="button">
         <svg class="w-8 h-8">
-          <use x-show="!isOpen" xlink:href="static/sprites/solid.svg#bars"></use>
-          <use x-show="isOpen" xlink:href="static/sprites/solid.svg#times"></use>
+          <use x-show="!isOpen" xlink:href="/static/sprites/solid.svg#bars"></use>
+          <use x-show="isOpen" xlink:href="/static/sprites/solid.svg#times"></use>
         </svg>
       </button>
     </div>
@@ -35,12 +35,12 @@
     <div id="left" class="flex-center m-2 gap-5">
       <a href="#">
         <svg class="w-8 h-8">
-          <use xlink:href="static/sprites/brands.svg#youtube"></use>
+          <use xlink:href="/static/sprites/brands.svg#youtube"></use>
         </svg>
       </a>
       <a href="#">
         <svg class="w-8 h-8">
-          <use xlink:href="static/sprites/brands.svg#instagram"></use>
+          <use xlink:href="/static/sprites/brands.svg#instagram"></use>
         </svg>
       </a>
     </div>
@@ -53,7 +53,7 @@
     <div id="right" class="flex-center m-2 gap-5">
       <a href="#">
         <svg class="w-8 h-8">
-          <use xlink:href="static/sprites/solid.svg#search"></use>
+          <use xlink:href="/static/sprites/solid.svg#search"></use>
         </svg>
       </a>
     </div>
@@ -61,5 +61,5 @@
 </header>
 
 <section class="flex-center bg-hero h-64">
-  <img class="h-36" src="static/images/logo.svg" alt="">
+  <img class="h-36" src="/static/images/logo.svg" alt="">
 </section>
