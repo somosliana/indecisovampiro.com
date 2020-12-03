@@ -21,7 +21,24 @@ section {
 .bg-bajate-la-app {
   background: linear-gradient(to bottom, transparent 0%, transparent 30%, #0E4056 30%, #0E4056 70%, transparent 70%);
 }
-
+.bg-sesiones-indecisas {
+  background-image: url('/static/images/backgrounds/sesiones-indecisas.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-invasion-indecisa {
+  background-image: url('/static/images/backgrounds/invasion-indecisa.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-editorial {
+  background-image: url('/static/images/backgrounds/editorial.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 /* WRAPPERS */
 .flex-center {
   @apply flex items-center justify-center;
