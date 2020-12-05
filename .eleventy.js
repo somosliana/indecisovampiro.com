@@ -9,9 +9,9 @@ module.exports = function (eleventyConfig) {
     "node_modules/@fortawesome/fontawesome-free/sprites": "static/sprites",
   });
 
-  eleventyConfig.addPassthroughCopy({ "_static": "static" });
+  eleventyConfig.addPassthroughCopy("static");
 
-  eleventyConfig.addPassthroughCopy({ "netlifycms.yaml": "admin/config.yml" });
+  eleventyConfig.addPassthroughCopy("admin");
 
   return {
     dir: {
