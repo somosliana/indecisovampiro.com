@@ -15,6 +15,39 @@ collections:
             widget: list
             allow_add: true
             fields:
-              - { label: Titulo, name: title, widget: string }
+              - { label: Titulo, name: titulo, widget: string }
               - { label: URL, name: url, widget: string }
-              - { label: Imagen, name: image, widget: image }
+              - { label: Imagen, name: imagen, widget: image }
+      - label: Programación
+        name: programacion
+        file: _data/programacion.json
+        fields:
+          - label: Programación
+            name: programacion
+            widget: list
+            allow_add: true
+            fields:
+              - { label: Titulo, name: titulo, widget: string }
+              - { label: Imagen, name: imagen, widget: image }
+              - { label: Dia, name: dia, widget: string }
+              - { label: Horario, name: hora, widget: string }
+              - { label: Tags, name: tags, widget: list }
+              - { label: Descripcion, name: descripcion, widget: "markdown" }
+              - { label: Musicalizacion, name: musicalizacion, widget: string }
+              - { label: Contacto, name: contacto, widget: string }
+      - label: Editorial
+        name: editorial
+        file: _data/editorial.json
+        fields:
+          - label: Editorial
+            name: editorial
+            widget: list
+            allow_add: true
+            fields:
+              - { label: Titulo, name: titulo, widget: string }
+              - { label: Imagen, name: imagen, widget: image }
+              - { label: Precio, name: precio, widget: number }
+              - { label: URL, name: url, widget: string }
+              - { label: Descripcion, name: description, widget: "markdown" }
+              - { label: Autor, name: autor, widget: string }
+              - { label: Instagram, name: instagram, widget: string }
