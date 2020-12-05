@@ -1,8 +1,8 @@
 <section class="flex flex-col max-w-content gap-4">
     <h1 class="uppercase text-2xl font-semibold md:text-5xl text-gray-700">Programación Indecisa</h1>
     <div class="grid grid-cols-2 gap-1 sm:grid-cols-4 sm:gap-4">
-        {% for num in (1..8) %}
-        <img src="/static/images/stubs/programa.png" alt="">
+        {% for p in programacion.programacion %}
+        <img src="{{ p.imagen }}" alt="">
         {% endfor %}
     </div>
 </section>
