@@ -1,7 +1,9 @@
 {
-    "funk": {
-        "thumbnail": "",
-        "alt": "",
-        "url": ""
+  "playlists": [
+    {
+      "name": "",
+      "image": "",
+      "url": ""
     }
+  ]
 }
