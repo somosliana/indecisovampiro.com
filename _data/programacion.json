@@ -1,0 +1,43 @@
+{
+  "ruido-en-el-sotano": {
+    "nombre": "Ruido en el Sótano",
+    "imagen": "static/images/programas/ruido-en-el-sotano.png",
+    "dia": "Martes",
+    "hora": "23:00",
+    "tags": [
+      "Musica",
+      "Punk"
+    ],
+    "descripcion": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.",
+    "musicalizacion": "Ramón Valdez",
+    "contacto": "RamonValdez@gmail.com"
+  },
+  "programacion": [
+    {
+      "titulo": "Olas en Montañas",
+      "imagen": "/static/images/uploads/programacion-olas-en-montanas.png",
+      "dia": "Lunes",
+      "hora": "22:00",
+      "tags": [
+        "Musica",
+        "Surf"
+      ],
+      "descripcion": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.",
+      "musicalizacion": "Ramon Valdez",
+      "contacto": "ramonvaldez@gmail.com"
+    },
+    {
+      "titulo": "Ruido en el Sótano",
+      "imagen": "/static/images/uploads/programacion-ruido-en-el-sotano.png",
+      "dia": "Martes",
+      "hora": "23:00",
+      "tags": [
+        "Musica",
+        "Punk"
+      ],
+      "descripcion": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.",
+      "musicalizacion": "Ramon Valdéz",
+      "contacto": "ramonvaldez@gmail.com"
+    }
+  ]
+}
