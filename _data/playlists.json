@@ -1,0 +1,14 @@
+{
+  "playlists": [
+    {
+      "title": "Post-Punk",
+      "url": "https://open.spotify.com/playlist/3gK1aPC6A33MT7bqHmXPy5",
+      "image": "/static/images/uploads/playlist-post-punk.jpg"
+    },
+    {
+      "title": "Funk",
+      "url": "https://open.spotify.com/playlist/4ZgqQXFQ0oJLinNjab9MAj",
+      "image": "/static/images/uploads/playlist-funk.jpg"
+    }
+  ]
+}
