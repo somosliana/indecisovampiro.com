@@ -1,7 +1,6 @@
 backend: { name: git-gateway, branch: master }
 locale: 'es'
-media_folder: '_static/images'
-public_folder: '/static/images'
+media_folder: 'static/images/uploads'
 collections:
   - name: files
     label: Configuracion
