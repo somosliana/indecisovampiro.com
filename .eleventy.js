@@ -11,6 +11,8 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy({ "_static": "static" });
 
+  eleventyConfig.addPassthroughCopy({ "netlifycms.yaml": "admin/config.yml" });
+
   return {
     dir: {
       input: "_pages",
