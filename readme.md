@@ -15,12 +15,13 @@
 ---
 
 # Roadmap
+## Video
+- Nombre de los archivos
+
 ## Website
-- Editorial con _data
-    - Add Data with CMS, then manual
+- Producto.liquid
 
 - Catalogo.html
-- Producto.liquid
 - Programa.liquid
 - Video
 
