@@ -12,8 +12,10 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addPassthroughCopy("static");
+  eleventyConfig.addPassthroughCopy("favicon.ico");
 
   eleventyConfig.addPassthroughCopy("admin");
+
 
   // 404 support in `eleventy serve`
   eleventyConfig.setBrowserSyncConfig({
