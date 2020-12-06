@@ -6,4 +6,66 @@ pagination:
     alias: producto
 permalink: "catalogo/{{ producto.titulo | slug }}/"
 ---
-{{ producto.titulo }}
+<section class="flex-center max-w-content py-10">
+  <img class="w-56 py-10" src="/static/images/stubs/editorial-vampira.png" alt="">
+</section>
+<!-- Card -->
+<section class="flex max-w-content gap-14">
+  <!-- Imagen -->
+  <img class="w-2/3" src="{{ producto.imagen }}" alt="">
+  <!-- Descripcion -->
+  <div class="flex flex-col justify-between my-4">
+    <!-- Top -->
+    <div class="flex flex-col gap-4">
+      <!-- Header -->
+      <div class="border-b-2 border-blue-900">
+        <h1 class="uppercase text-4xl">{{ producto.titulo }}</h1>
+        <h3 class="uppercase text-base text-blue-800">
+          {{ producto.autor }}{% if producto.instagram != ""%} - @{{ producto.instagram }}{% endif %}
+        </h3>
+      </div>
+      <!-- Descripcion -->
+      <p class="text-xs pl-2">{{ producto.descripcion }}</p>
+      <!-- Precio -->
+      <h1 class="uppercase text-3xl text-blue-800">${{ producto.precio }}</h1>
+    </div>
+    <!-- Botton -->
+    <div class="flex justify-between items-start">
+      <div class="flex flex-col">
+        <!-- Comprar -->
+        <a class="flex-center uppercase border-2 text-2xl p-2" href="{{ producto.url }}">
+          <svg class="w-6 h-6 mr-2">
+            <use xlink:href="/static/sprites/solid.svg#shopping-cart"></use>
+          </svg>
+          Comprar
+        </a>
+      </div>
+      <!-- Compartir -->
+      <div class="flex flex-col gap-2">
+        <p class="text-xs text-right border-b-2 border-blue-900">Compartir</p>
+        <div class="flex gap-2">
+          <a href="#">
+            <svg class="w-5 h-5">
+              <use xlink:href="/static/sprites/brands.svg#instagram"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="w-5 h-5">
+              <use xlink:href="/static/sprites/brands.svg#spotify"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="w-5 h-5">
+              <use xlink:href="/static/sprites/brands.svg#twitter"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="w-5 h-5">
+              <use xlink:href="/static/sprites/brands.svg#facebook"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

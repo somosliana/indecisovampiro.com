@@ -48,6 +48,6 @@ collections:
               - { label: Imagen, name: imagen, widget: image }
               - { label: Precio, name: precio, widget: number }
               - { label: URL, name: url, widget: string }
-              - { label: Descripcion, name: description, widget: "markdown" }
+              - { label: Descripcion, name: descripcion, widget: "markdown" }
               - { label: Autor, name: autor, widget: string }
               - { label: Instagram, name: instagram, widget: string }

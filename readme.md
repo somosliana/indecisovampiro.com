@@ -1,34 +1,23 @@
 # Wilson
-## Grafico
-- Titulo Subtitulo .svg
-- Logo.png
-- Botones largos
-- El "Dibujo"
-- La imagen que es una pila de 3 "Lugares donde dormi"
-## Otro
-- ¿Encuentros, Talleres, Juegos, 404, Footer?
-- ¿Server?
-- Los botones de compra mercadopago
-- Dominio config
-- Ver video CMS
+- Imagenes: /static/images/stubs
+- Diseño: ¿Encuentros, Talleres, Juegos, 404, Footer?
+- Comprar: ¿Server?
+- Configurar: Dominio
+## CMS
+- Nombre de los archivos
+- Proporciones de las imagenes
+- Link Mercadopago
 
 ---
 
 # Roadmap
-## Video CMS
-- Nombre de los archivos
-- Link Mercadopago
-
-## Website
-- Producto.liquid
-
-- Catalogo.html
-- Programa.liquid
-- Video
-
 - hover focus active
+- colores
+- margins/paddings
+
 - mobile view
 - minify files y assets
+- Producto/Programa share buttons
 
 
 # Refactor
