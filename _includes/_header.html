@@ -34,31 +34,35 @@
 <!-- Desktop -->
 <header class="hidden md:block border-b-2 border-white">
   <div class="max-w-content flex-center justify-between">
+    <!-- Left -->
     <div class="flex-center m-2 gap-5">
-      <a href="#">
+      <a href="{{ site.youtube }}">
         <svg class="w-8 h-8">
           <use xlink:href="/static/sprites/brands.svg#youtube"></use>
         </svg>
       </a>
-      <a href="#">
+      <a href="{{ site.instagram }}">
         <svg class="w-8 h-8">
           <use xlink:href="/static/sprites/brands.svg#instagram"></use>
         </svg>
       </a>
-      <a href="#">
-        <svg class="w-8 h-8">
-          <use xlink:href="/static/sprites/brands.svg#facebook-square"></use>
-        </svg>
-      </a>
     </div>
-    <nav id="middle" class="flex-center justify-between gap-3">
-      {% assign links = "música, audiovisuales, editorial, encuentros, talleres, juegos" | split: ', ' %}
+    <!-- Middle -->
+    <nav class="flex-center justify-between gap-3">
+      <!-- IDs /# -->
+      {% assign links = "música, audiovisuales, editorial" | split: ', ' %}
       {% for l in links %}
-      <a href="#{{l}}" class="uppercase font-semibold text-lg px-4">{{ l }}</a>
+      <a href="/#{{l | slug}}" class="uppercase font-semibold text-lg px-4">{{ l }}</a>
+      {% endfor %}
+      <!-- Pages / -->
+      {% assign links = "encuentros, talleres, juegos" | split: ', ' %}
+      {% for l in links %}
+      <a href="/{{l | slug}}" class="uppercase font-semibold text-lg px-4">{{ l }}</a>
       {% endfor %}
     </nav>
+    <!-- Right -->
     <div id="right" class="flex-center m-2 gap-5">
-      <a href="#">
+      <a href="/buscar">
         <svg class="w-8 h-8">
           <use xlink:href="/static/sprites/solid.svg#search"></use>
         </svg>
