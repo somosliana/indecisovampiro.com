@@ -1,3 +1,5 @@
+const fs = require("fs");
+
 module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget("_site/tailwind.css");
 
@@ -12,6 +14,20 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("static");
 
   eleventyConfig.addPassthroughCopy("admin");
+
+  // 404 support in `eleventy serve`
+  eleventyConfig.setBrowserSyncConfig({
+    callbacks: {
+     ready: function(err, bs) {
+       const content_404 = fs.readFileSync('_site/404.html');
+       bs.addMiddleware("*", (req, res) => {
+        // Provides the 404 content without redirect.
+        res.write(content_404);
+        res.end();
+      });
+     }
+    }
+  });
 
   return {
     dir: {

@@ -22,9 +22,9 @@
 </head>
 
 <body class="debug-screens">
-  {% include shared/header.html %}
+  {% include _header.html %}
   {{ content }}
-  {% include shared/footer.html %}
+  {% include _footer.html %}
   <script>
     if (window.netlifyIdentity) {
       window.netlifyIdentity.on("init", user => {
