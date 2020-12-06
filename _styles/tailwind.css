@@ -1,6 +1,9 @@
 @tailwind base;
 @tailwind components;
 /* DEFAULTS */
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-image: linear-gradient(#000000, #00355A);
   /*background-image: linear-gradient(#000000, #006fbb);*/
