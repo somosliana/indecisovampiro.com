@@ -6,7 +6,7 @@
 - El "Dibujo"
 - La imagen que es una pila de 3 "Lugares donde dormi"
 ## Otro
-- ¿Encuentros, Talleres, Juegos, 404?
+- ¿Encuentros, Talleres, Juegos, 404, Footer?
 - ¿Server?
 - Los botones de compra mercadopago
 - Dominio config
@@ -15,8 +15,9 @@
 ---
 
 # Roadmap
-## Video
+## Video CMS
 - Nombre de los archivos
+- Link Mercadopago
 
 ## Website
 - Producto.liquid
@@ -36,10 +37,12 @@
 - Revisar los colores y los margenes de las cosas
 - Streming Indeciso: mejor distribucion en desktop
 - Boton: "Get it on Google Play" -> "Consiguelo en..."
+- CMS: Dibujo, miembros.json ala Pillarsed
 
 ## Invisible
 - Sacar alpine.js
 - Google Fonts -> /static/fonts/Barlow
+- alt="", aria-hidden="true"
 - Des-harcodear Links y mejor site.json
 - customs de tailwind.css -> tailwind.config.js
 - La imagen que es una pila de 3 "Lugares donde dormi" que sea generada por 3 imagenes del catalogo
