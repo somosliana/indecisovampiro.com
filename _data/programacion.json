@@ -5,17 +5,23 @@
       "imagen": "/static/images/uploads/programacion-olas-en-montanas.png",
       "dia": "Lunes",
       "hora": "22:00",
-      "tags": ["Musica", "Surf"],
+      "tags": [
+        "Musica",
+        "Surf"
+      ],
       "descripcion": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.",
       "musicalizacion": "Ramon Valdez",
       "contacto": "ramonvaldez@gmail.com"
     },
     {
-      "titulo": "Ruido en el Sótano",
+      "titulo": "La nave de cristal",
       "imagen": "/static/images/uploads/programacion-ruido-en-el-sotano.png",
       "dia": "Martes",
       "hora": "23:00",
-      "tags": ["Musica", "Punk"],
+      "tags": [
+        "Musica",
+        "Punk"
+      ],
       "descripcion": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.",
       "musicalizacion": "Ramon Valdéz",
       "contacto": "ramonvaldez@gmail.com"
@@ -25,7 +31,9 @@
       "imagen": "/static/images/uploads/programacion-peleas-subterraneas.png",
       "dia": "Miercoles",
       "hora": "21:00",
-      "tags": ["Podcast"],
+      "tags": [
+        "Podcast"
+      ],
       "descripcion": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.",
       "musicalizacion": "Ramon Valdez",
       "contacto": "ramonvaldez@gmail.com"
@@ -35,7 +43,9 @@
       "imagen": "/static/images/uploads/programacion-mama-estoy-en-casa.png",
       "dia": "Jueves",
       "hora": "23:00",
-      "tags": ["Podcast"],
+      "tags": [
+        "Podcast"
+      ],
       "descripcion": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.",
       "musicalizacion": "Ramon Valdéz",
       "contacto": "ramonvaldez@gmail.com"
@@ -45,7 +55,10 @@
       "imagen": "/static/images/uploads/programacion-pipas-y-cerveza.png",
       "dia": "Viernes",
       "hora": "23:00",
-      "tags": ["Musica", "Trash"],
+      "tags": [
+        "Musica",
+        "Trash"
+      ],
       "descripcion": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.",
       "musicalizacion": "Ramon Valdez",
       "contacto": "ramonvaldez@gmail.com"
@@ -55,7 +68,10 @@
       "imagen": "/static/images/uploads/programacion-electrodo-dominante.png",
       "dia": "Viernes",
       "hora": "24:00",
-      "tags": ["Musica", "Techno"],
+      "tags": [
+        "Musica",
+        "Techno"
+      ],
       "descripcion": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.",
       "musicalizacion": "Ramon Valdéz",
       "contacto": "ramonvaldez@gmail.com"
@@ -65,7 +81,10 @@
       "imagen": "/static/images/uploads/programacion-que-rico-super-8.png",
       "dia": "Sabado",
       "hora": "20:00",
-      "tags": ["Podcast", "Cine"],
+      "tags": [
+        "Podcast",
+        "Cine"
+      ],
       "descripcion": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.",
       "musicalizacion": "Ramon Valdez",
       "contacto": "ramonvaldez@gmail.com"
@@ -75,7 +94,9 @@
       "imagen": "/static/images/uploads/programacion-calavera-no-chilla.png",
       "dia": "Domingo",
       "hora": "22:00",
-      "tags": ["Podcast"],
+      "tags": [
+        "Podcast"
+      ],
       "descripcion": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.",
       "musicalizacion": "Ramon Valdéz",
       "contacto": "ramonvaldez@gmail.com"
