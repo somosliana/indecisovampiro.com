@@ -1,12 +1,14 @@
+<!-- Separador -->
 <section id="musica" class="max-w-content px-0">
   <div class="bg-separador h-24">
 </section>
+
 <!-- Radio en Vivo -->
 <section
-  class="flex-center max-w-content flex-col gap-12 sm:grid sm:grid-cols-2 sm:grid-rows-2 sm:grid-flow-col">
+  class="max-w-content grid grid-cols-1 gap-12 sm:grid sm:grid-cols-2 sm:grid-rows-2 sm:grid-flow-col">
   <!-- Titulo -->
-  <div class="">
-    <img class="w-full" src="/static/images/stubs/radio-en-vivo.png" alt="">
+  <div class="flex-center">
+    <img class="" src="/static/images/stubs/radio-en-vivo.png" alt="">
   </div>
   <!-- Radio -->
   <div class="flex-center">
@@ -28,34 +30,13 @@
     </script>
   </div>
   <!-- Video -->
-  <div class="embed-responsive aspect-ratio-4/3 row-span-full">
+  <div class="embed-responsive aspect-ratio-4/3 sm:row-span-full">
     <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/gNDmVh0D9F0"></iframe>
   </div>
 </section>
 
 <!-- Bajate la App -->
-<!-- Mobile -->
-<section class="sm:hidden flex-center max-w-content flex-col items-center gap-8">
-  <div class="">
-    <h1 class="uppercase text-4xl">Bajate la app</h1>
-    <h2 class="text-sm">Y seguí escuchando Radio Vampira sin drama.</h2>
-  </div>
-  <img class="w-9/12" src="static/images/app.png" alt="">
-  <img class="h-10" src="static/images/buttons/google-play.png" alt="">
-</section>
-<!-- Desktop -->
-<section class="hidden sm:block bg-bajate-la-app py-10">
-  <div class="flex items-center justify-between gap-4 max-w-content px-20">
-    <div class="flex items-center gap-4">
-      <img class="w-1/4" src="static/images/app.png" alt="">
-      <div class="">
-        <h1 class="uppercase text-3xl md:text-5xl font-semibold" style="color: #3FA9F5">Bajate la app</h1>
-        <h2 class="text-base md:text-xl">Y seguí escuchando Radio Vampira sin drama.</h2>
-      </div>
-    </div>
-    <img class="h-10" src="static/images/buttons/google-play.png" alt="">
-  </div>
-</section>
+{% include home/_bajate-la-app.html %}
 
 <!-- Programacion -->
 <section class="max-w-content py-10">

@@ -28,6 +28,9 @@ section {
 .bg-bajate-la-app {
   background: linear-gradient(to bottom, transparent 0%, transparent 30%, #0E4056 30%, #0E4056 70%, transparent 70%);
 }
+.bg-bajate-la-app-mobile {
+  background: linear-gradient(to bottom, transparent 0%, transparent 40%, #0E4056 40%, #0E4056 60%, transparent 60%);
+}
 .bg-sesiones-indecisas {
   background-image: url('/static/images/backgrounds/sesiones-indecisas.png');
   background-position: center;
