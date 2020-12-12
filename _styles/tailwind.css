@@ -6,20 +6,24 @@ html {
 }
 body {
   background-image: linear-gradient(#000000, #00355A);
-  /*background-image: linear-gradient(#000000, #006fbb);*/
   @apply text-white;
 }
 svg {
   @apply fill-current;
 }
-
 section {
-  @apply py-24 px-20;
+  @apply px-5 py-24 sm:px-20 sm:py-24;
 }
 
 /* BACKGROUNDS */
 .bg-hero {
   background-image: linear-gradient(#006fbe, #1ba9e3);
+}
+.bg-separador {
+  background-image: url('/static/images/separador.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .bg-bajate-la-app {
   background: linear-gradient(to bottom, transparent 0%, transparent 30%, #0E4056 30%, #0E4056 70%, transparent 70%);
