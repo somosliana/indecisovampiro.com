@@ -6,28 +6,31 @@ pagination:
     alias: programa
 permalink: "programas/{{ programa.titulo | slug }}/"
 ---
-<section class="max-w-content py-10">
-  <img class="" src="/static/images/radio-vampira.svg" alt="">
+<!-- Radio Vampira -->
+<section class="py-10 max-w-content flex-center">
+  <img class="hidden sm:block" src="/static/images/radio-vampira.svg" alt="">
+  <img class="block w-56 sm:hidden" src="/static/images/radio-vampira.png" alt="">
 </section>
+
 <!-- Card -->
-<section class="flex max-w-content gap-14">
+<section class="flex flex-col py-24 pt-14 sm:flex-row max-w-content gap-14">
   <!-- Imagen -->
-  <img class="w-2/5" src="{{ programa.imagen }}" alt="">
+  <img class="hidden w-2/5 sm:block" src="{{ programa.imagen }}" alt="">
   <!-- Descripcion -->
-  <div class="flex flex-col justify-between my-4">
+  <div class="flex flex-col justify-between gap-4 my-4">
     <!-- Top -->
     <div class="flex flex-col gap-4">
       <!-- Header -->
       <div class="border-b-2 border-blue-900">
-        <h2 class="uppercase text-2xl">{{ programa.dia }} {{ programa.hora }}</h2>
-        <h1 class="uppercase text-5xl">{{ programa.titulo }}</h1>
-        <h3 class="uppercase text-base text-blue-800">#MUSICA #PUNK</h3>
+        <h2 class="text-xl uppercase sm:text-2xl">{{ programa.dia }} {{ programa.hora }}</h2>
+        <h1 class="text-3xl uppercase sm:text-5xl">{{ programa.titulo }}</h1>
+        <h3 class="text-base text-blue-800 uppercase">#MUSICA #PUNK</h3>
       </div>
       <!-- Paragraph-->
-      <p class="text-xs pl-2">{{ programa.descripcion }}</p>
+      <p class="text-xs sm:pl-2">{{ programa.descripcion }}</p>
     </div>
     <!-- Botton -->
-    <div class="flex justify-between items-end">
+    <div class="flex items-end justify-between">
       <div class="flex flex-col">
         <p class="text-xs">Musicalización: {{ programa.musicalizacion }}</p>
         <p class="text-xs">Contacto: {{ programa.contacto }}</p>
