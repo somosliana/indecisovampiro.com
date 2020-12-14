@@ -16,6 +16,12 @@ section {
 }
 
 /* BACKGROUNDS */
+.bg-boton-spotify {
+  background-image: url('/static/images/stubs/spotify.png');
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .bg-hero {
   background-image: linear-gradient(#006fbe, #1ba9e3);
 }
