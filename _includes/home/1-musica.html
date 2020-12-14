@@ -1,11 +1,11 @@
 <!-- Separador -->
-<section id="musica" class="max-w-content px-0">
-  <div class="bg-separador h-24">
+<section id="musica" class="px-0 max-w-content">
+  <div class="h-24 bg-separador">
 </section>
 
 <!-- Radio en Vivo -->
 <section
-  class="max-w-content grid grid-cols-1 gap-12 sm:grid sm:grid-cols-2 sm:grid-rows-2 sm:grid-flow-col">
+  class="grid grid-cols-1 gap-12 max-w-content sm:grid sm:grid-cols-2 sm:grid-rows-2 sm:grid-flow-col">
   <!-- Titulo -->
   <div class="flex-center">
     <img class="" src="/static/images/stubs/radio-en-vivo.png" alt="">
@@ -24,14 +24,14 @@
 {% include home/_bajate-la-app.html %}
 
 <!-- Radio Vampira -->
-<section class="max-w-content flex-center py-10">
+<section class="py-10 max-w-content flex-center">
   <img class="hidden sm:block" src="static/images/radio-vampira.svg" alt="">
-  <img class="block sm:hidden w-56" src="static/images/radio-vampira.png" alt="">
+  <img class="block w-56 sm:hidden" src="static/images/radio-vampira.png" alt="">
 </section>
 
 <!-- Programacion -->
-<section class="flex flex-col max-w-content gap-4">
-  <h1 class="uppercase text-2xl font-semibold md:text-5xl text-gray-700">Programación Indecisa</h1>
+<section class="flex flex-col gap-4 max-w-content">
+  <h1 class="text-2xl font-semibold text-gray-700 uppercase md:text-5xl">Programación Indecisa</h1>
   <div class="grid grid-cols-2 gap-1 sm:grid-cols-4 sm:gap-4">
     {% for programa in programacion.programacion %}
       <a href="/programas/{{ programa.titulo | slug }}/">
@@ -43,3 +43,11 @@
 
 <!-- Streaming -->
 {% include home/_streaming.html %}
+
+<!-- Boton -->
+<div class="max-w-content">
+  <a class="block pr-5 sm:pr-20" href="{{ site.spotify }}">
+    <div class="h-12 bg-right bg-no-repeat bg-cover sm:h-16" style="background-image: url('/static/images/stubs/spotify.png');">
+    </div>
+  </a>
+</div>
