@@ -7,13 +7,13 @@ pagination:
 permalink: "programas/{{ programa.titulo | slug }}/"
 ---
 <!-- Radio Vampira -->
-<section class="py-10 max-w-screen-lg mx-auto flex items-center justify-center">
+<section class="flex items-center justify-center max-w-screen-lg py-10 mx-auto">
   <img class="hidden sm:block" src="/static/images/radio-vampira.svg" alt="">
   <img class="block w-56 sm:hidden" src="/static/images/radio-vampira.png" alt="">
 </section>
 
 <!-- Card -->
-<section class="flex flex-col py-24 pt-14 sm:flex-row max-w-screen-lg mx-auto gap-14">
+<section class="flex flex-col max-w-screen-lg py-24 mx-auto pt-14 sm:flex-row gap-14">
   <!-- Imagen -->
   <img class="hidden w-2/5 sm:block" src="{{ programa.imagen }}" alt="">
   <!-- Descripcion -->
@@ -29,7 +29,7 @@ permalink: "programas/{{ programa.titulo | slug }}/"
       <!-- Paragraph-->
       <p class="text-xs sm:pl-2">{{ programa.descripcion }}</p>
     </div>
-    <!-- Botton -->
+    <!-- Bottom -->
     <div class="flex items-end justify-between">
       <div class="flex flex-col">
         <p class="text-xs">Musicalización: {{ programa.musicalizacion }}</p>
@@ -38,22 +38,17 @@ permalink: "programas/{{ programa.titulo | slug }}/"
       <div class="flex flex-col gap-2">
         <p class="text-xs text-right border-b-2 border-blue-900">Compartir</p>
         <div class="flex gap-2">
-          <a href="#">
+          <a href="https://wa.me/?text={{ site.baseURL }}{{ page.url }}">
             <svg class="w-5 h-5">
-              <use xlink:href="/static/sprites/brands.svg#instagram"></use>
+              <use xlink:href="/static/sprites/brands.svg#whatsapp"></use>
             </svg>
           </a>
-          <a href="#">
-            <svg class="w-5 h-5">
-              <use xlink:href="/static/sprites/brands.svg#spotify"></use>
-            </svg>
-          </a>
-          <a href="#">
+          <a href="https://twitter.com/intent/tweet?url={{ site.baseURL }}{{ page.url }}">
             <svg class="w-5 h-5">
               <use xlink:href="/static/sprites/brands.svg#twitter"></use>
             </svg>
           </a>
-          <a href="#">
+          <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.baseURL }}{{ page.url }}">
             <svg class="w-5 h-5">
               <use xlink:href="/static/sprites/brands.svg#facebook"></use>
             </svg>
