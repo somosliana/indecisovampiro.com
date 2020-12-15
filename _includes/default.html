@@ -2,7 +2,7 @@
 <html lang="es-AR">
 
 <head>
-  <title>{{ title }} - {{ site.title }}</title>
+  <title>{% if title %}{{ title }} - {% endif %}{{ site.title }}</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover" />
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
@@ -21,7 +21,7 @@
   </style>
 </head>
 
-<body>
+<body style="background-image: linear-gradient(#000000, #00355A);">
   {% include _header.html %}
   {{ content }}
   {% include _footer.html %}

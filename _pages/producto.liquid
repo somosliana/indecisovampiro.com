@@ -6,12 +6,12 @@ pagination:
     alias: producto
 permalink: "catalogo/{{ producto.titulo | slug }}/"
 ---
-<section class="py-10 flex-center max-w-content">
+<section class="py-10 flex items-center justify-center max-w-screen-lg mx-auto">
   <img class="w-56 py-10" src="/static/images/stubs/editorial-vampira.png" alt="">
 </section>
 
 <!-- Card -->
-<section class="flex flex-col items-center py-12 pt-0 sm:flex-row max-w-content gap-14">
+<section class="flex flex-col items-center py-12 pt-0 sm:flex-row max-w-screen-lg mx-auto gap-14">
   <!-- Imagen -->
   <img class="hidden w-2/3 sm:block" src="{{ producto.imagen }}" alt="">
   <!-- Descripcion -->
@@ -36,7 +36,7 @@ permalink: "catalogo/{{ producto.titulo | slug }}/"
     <div class="flex items-start justify-between">
       <div class="flex flex-col">
         <!-- Comprar -->
-        <a class="p-2 text-lg uppercase border-2 sm:text-2xl flex-center" href="{{ producto.url }}">
+        <a class="p-2 text-lg uppercase border-2 sm:text-2xl flex items-center justify-center" href="{{ producto.url }}">
           <svg class="w-6 h-6 mr-2">
             <use xlink:href="/static/sprites/solid.svg#shopping-cart"></use>
           </svg>

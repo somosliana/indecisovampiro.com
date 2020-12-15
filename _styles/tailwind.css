@@ -1,11 +1,9 @@
 @tailwind base;
 @tailwind components;
-/* DEFAULTS */
 html {
   scroll-behavior: smooth;
 }
 body {
-  background-image: linear-gradient(#000000, #00355A);
   @apply text-white;
 }
 svg {
@@ -13,53 +11,5 @@ svg {
 }
 section {
   @apply px-5 py-24 sm:px-20 sm:py-24;
-}
-
-/* BACKGROUNDS */
-.bg-boton-spotify {
-  background-image: url('/static/images/stubs/spotify.png');
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.bg-hero {
-  background-image: linear-gradient(#006fbe, #1ba9e3);
-}
-.bg-separador {
-  background-image: url('/static/images/separador.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.bg-bajate-la-app {
-  background: linear-gradient(to bottom, transparent 0%, transparent 30%, #0E4056 30%, #0E4056 70%, transparent 70%);
-}
-.bg-bajate-la-app-mobile {
-  background: linear-gradient(to bottom, transparent 0%, transparent 40%, #0E4056 40%, #0E4056 60%, transparent 60%);
-}
-.bg-sesiones-indecisas {
-  background-image: url('/static/images/backgrounds/sesiones-indecisas.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.bg-invasion-indecisa {
-  background-image: url('/static/images/backgrounds/invasion-indecisa.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.bg-editorial {
-  background-image: url('/static/images/backgrounds/editorial.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-/* WRAPPERS */
-.flex-center {
-  @apply flex items-center justify-center;
-}
-.max-w-content {
-  @apply max-w-screen-lg mx-auto;
 }
 @tailwind utilities;
