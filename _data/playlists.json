@@ -1,14 +1,14 @@
 {
   "playlists": [
     {
-      "titulo": "Post-Punk",
-      "url": "https://open.spotify.com/playlist/3gK1aPC6A33MT7bqHmXPy5",
-      "imagen": "/static/images/uploads/playlist-post-punk.jpg"
-    },
-    {
       "titulo": "Funk",
       "url": "https://open.spotify.com/playlist/4ZgqQXFQ0oJLinNjab9MAj",
       "imagen": "/static/images/uploads/playlist-funk.jpg"
+    },
+    {
+      "titulo": "Post-Punk",
+      "url": "https://open.spotify.com/playlist/3gK1aPC6A33MT7bqHmXPy5",
+      "imagen": "/static/images/uploads/playlist-post-punk.jpg"
     },
     {
       "titulo": "Grunge",
