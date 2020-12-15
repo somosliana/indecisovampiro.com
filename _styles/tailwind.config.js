@@ -13,7 +13,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        sans: ["Barlow", ...defaultTheme.fontFamily.sans],
+        sans: ["Barlow Condensed", ...defaultTheme.fontFamily.sans],
       },
     },
   },
