@@ -43,42 +43,43 @@
       "contacto": "Vivoindeciso@gmail.com"
     },
     {
-      "titulo": "Mamá Estoy en Casa",
+      "titulo": "Azul Profundo",
       "imagen": "/static/images/uploads/programacion-mama-estoy-en-casa.png",
       "dia": "Jueves",
-      "hora": "23:00",
+      "hora": "21:00",
       "tags": [
-        "Podcast"
+        "musica",
+        "sesenta",
+        ""
       ],
-      "descripcion": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.",
-      "musicalizacion": "Ramon Valdéz",
-      "contacto": "ramonvaldez@gmail.com"
+      "descripcion": "Aventura sonora que recorre las mejores paradas instrumentales de los años sesenta. Vaivenes musicales con pequeños interludios radiofónicos de la época, efectos espaciales que ponen la piel de gallina y transportan tus oídos a otra realidad.",
+      "musicalizacion": "Mauro Hernández",
+      "contacto": "mauro87hz@gmail.com"
     },
     {
-      "titulo": "Pipas y Cerveza",
+      "titulo": "El Corte del Director",
       "imagen": "/static/images/uploads/programacion-pipas-y-cerveza.png",
-      "dia": "Viernes",
-      "hora": "23:00",
+      "dia": "Jueves",
+      "hora": "20:00",
       "tags": [
         "Musica",
-        "Trash"
+        "Cine"
       ],
-      "descripcion": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.",
-      "musicalizacion": "Ramon Valdez",
-      "contacto": "ramonvaldez@gmail.com"
+      "descripcion": "Programa de corta duración, dedicado a recorrer y analizar la obra de algunos de los compositores más renombrados en el mundo de las bandas sonoras para cine, así como también, de algunos de los nuevos exponentes en esta disciplina. Además de música, el programa se complementará con fragmentos de audio -pertenecientes a entrevistas o escenas de películas- que ayudaran a reforzar la idea general de cada capítulo.",
+      "musicalizacion": "Sebastian Casal",
+      "contacto": "pleasedontwakeme@gmail.com"
     },
     {
-      "titulo": "Electrodo Dominante",
+      "titulo": "Resonancias",
       "imagen": "/static/images/uploads/programacion-electrodo-dominante.png",
-      "dia": "Viernes",
-      "hora": "24:00",
+      "dia": "Domingo",
+      "hora": "20:00",
       "tags": [
-        "Musica",
-        "Techno"
+        "Musica"
       ],
-      "descripcion": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.",
-      "musicalizacion": "Ramon Valdéz",
-      "contacto": "ramonvaldez@gmail.com"
+      "descripcion": "Dj set ecléctico, que explora géneros y estilos musicales (actuales y de décadas pasadas), haciendo énfasis en el carácter desconocido de algunos artistas, discos y composiciones. Con selecciones musicales que van del jazz a la electrónica, del rock progresivo al funk, pasando por los ritmos africanos y latinos (afrobeat, salsa, cumbia), entre otros.",
+      "musicalizacion": "Sebastian Casal",
+      "contacto": "pleasedontwakeme@gmail.com"
     },
     {
       "titulo": "Que Rico Super 8",
