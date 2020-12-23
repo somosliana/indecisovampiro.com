@@ -1,17 +1,18 @@
 {
   "programacion": [
     {
-      "titulo": "Olas en Montañas",
+      "titulo": "Dos pájaros de un tiro",
       "imagen": "/static/images/uploads/programacion-olas-en-montanas.png",
-      "dia": "Lunes",
-      "hora": "22:00",
+      "dia": "Viernes",
+      "hora": "15:00",
       "tags": [
         "Musica",
-        "Surf"
+        "Tertulia",
+        "Simpsons"
       ],
-      "descripcion": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.",
-      "musicalizacion": "Ramon Valdez",
-      "contacto": "ramonvaldez@gmail.com"
+      "descripcion": "Encuentro rockero para encarar el inicio del fin de semana con chascarrillos y charlas inesperadas sobre cosas que sucedieron en la semana y cosas que no van a suceder nunca.",
+      "musicalizacion": "El cieguito volador",
+      "contacto": "Alanespinoza1990@gmail.com"
     },
     {
       "titulo": "La nave de cristal",
@@ -29,16 +30,17 @@
       "contacto": "lanavedecristalradio@gmail.com"
     },
     {
-      "titulo": "Peleas Subterráneas",
+      "titulo": "Vivo indeciso",
       "imagen": "/static/images/uploads/programacion-peleas-subterraneas.png",
       "dia": "Miercoles",
-      "hora": "21:00",
+      "hora": "23:00",
       "tags": [
-        "Podcast"
+        "Recitales",
+        "musica"
       ],
-      "descripcion": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.",
-      "musicalizacion": "Ramon Valdez",
-      "contacto": "ramonvaldez@gmail.com"
+      "descripcion": "Selección indecisa de recitales en vivo de cualquier año, cualquier lugar e idioma.",
+      "musicalizacion": "Indeciso Vampiro",
+      "contacto": "Vivoindeciso@gmail.com"
     },
     {
       "titulo": "Mamá Estoy en Casa",
