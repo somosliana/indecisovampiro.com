@@ -1,20 +1,6 @@
 {
   "programacion": [
     {
-      "titulo": "Dos pájaros de un tiro",
-      "imagen": "/static/images/uploads/programacion-olas-en-montanas.png",
-      "dia": "Viernes",
-      "hora": "15:00",
-      "tags": [
-        "Musica",
-        "Tertulia",
-        "Simpsons"
-      ],
-      "descripcion": "Encuentro rockero para encarar el inicio del fin de semana con chascarrillos y charlas inesperadas sobre cosas que sucedieron en la semana y cosas que no van a suceder nunca.",
-      "musicalizacion": "El cieguito volador",
-      "contacto": "Alanespinoza1990@gmail.com"
-    },
-    {
       "titulo": "La nave de cristal",
       "imagen": "/static/images/uploads/la-nave-de-cristal.png",
       "dia": "Viernes",
@@ -41,6 +27,20 @@
       "descripcion": "Selección indecisa de recitales en vivo de cualquier año, cualquier lugar e idioma.",
       "musicalizacion": "Indeciso Vampiro",
       "contacto": "Vivoindeciso@gmail.com"
+    },
+    {
+      "titulo": "Dos pájaros de un tiro",
+      "imagen": "/static/images/uploads/programacion-olas-en-montanas.png",
+      "dia": "Viernes",
+      "hora": "15:00",
+      "tags": [
+        "Musica",
+        "Tertulia",
+        "Simpsons"
+      ],
+      "descripcion": "Encuentro rockero para encarar el inicio del fin de semana con chascarrillos y charlas inesperadas sobre cosas que sucedieron en la semana y cosas que no van a suceder nunca.",
+      "musicalizacion": "El cieguito volador",
+      "contacto": "Alanespinoza1990@gmail.com"
     },
     {
       "titulo": "Azul Profundo",
