@@ -22,23 +22,25 @@ permalink: "catalogo/{{ producto.titulo | slug }}/"
     <div class="flex flex-col gap-4">
       <!-- Header -->
       <div class="border-b-2 border-blue-900">
-        <h1 class="text-2xl uppercase sm:text-4xl">{{ producto.titulo }}</h1>
-        <h3 class="text-xs text-blue-800 uppercase sm:text-base">
+        <!-- Titulo -->
+        <h1 class="text-3xl uppercase sm:text-5xl">{{ producto.titulo }}</h1>
+        <!-- Autor -->
+        <h3 class="text-2xl text-blue-800 uppercase sm:text-3xl">
           {{ producto.autor }}{% if producto.instagram != ""%} - @{{ producto.instagram }}{% endif %}
         </h3>
       </div>
       <!-- ONLY MOBILE: Image -->
       <img class="pr-20 my-4 sm:hidden" src="{{ producto.imagen }}" alt="">
       <!-- Descripcion -->
-      <p class="text-xs sm:pl-2">{{ producto.descripcion }}</p>
+      <p class="text-base">{{ producto.descripcion }}</p>
       <!-- Precio -->
-      <h1 class="text-3xl text-blue-800 uppercase">${{ producto.precio }}</h1>
+      <h1 class="text-4xl text-blue-800 uppercase">${{ producto.precio }}</h1>
     </div>
     <!-- Bottom -->
     <div class="flex items-start justify-between">
       <div class="flex flex-col">
         <!-- Comprar -->
-        <a class="flex items-center justify-center p-2 text-lg uppercase border-2 sm:text-2xl" href="{{ producto.url }}">
+        <a class="flex items-center justify-center p-2 text-lg uppercase border-2 sm:text-3xl" href="{{ producto.url }}">
           <svg class="w-6 h-6 mr-2">
             <use xlink:href="/static/sprites/solid.svg#shopping-cart"></use>
           </svg>
@@ -47,7 +49,7 @@ permalink: "catalogo/{{ producto.titulo | slug }}/"
       </div>
       <!-- Compartir -->
       <div class="flex flex-col gap-2">
-        <p class="text-xs text-right border-b-2 border-blue-900">Compartir</p>
+        <p class="text-base text-right border-b-2 border-blue-900">Compartir</p>
         <div class="flex gap-2">
           <a href="#">
             <svg class="w-5 h-5">

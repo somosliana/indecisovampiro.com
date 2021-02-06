@@ -31,12 +31,12 @@
     <!-- IDs /# -->
     {% assign links = "música, audiovisuales, editorial" | split: ', ' %}
     {% for l in links %}
-    <a href="/#{{l | slug}}" class="text-lg font-semibold uppercase">{{ l }}</a>
+    <a href="/#{{l | slug}}" class="text-xl font-semibold uppercase">{{ l }}</a>
     {% endfor %}
     <!-- Pages / -->
     {% assign links = "encuentros, talleres, juegos" | split: ', ' %}
     {% for l in links %}
-    <a href="/{{l | slug}}" class="text-lg font-semibold uppercase">{{ l }}</a>
+    <a href="/proximamente" class="text-xl font-semibold uppercase">{{ l }}</a>
     {% endfor %}
   </nav>
 </header>
@@ -63,12 +63,12 @@
       <!-- IDs /# -->
       {% assign links = "música, audiovisuales, editorial" | split: ', ' %}
       {% for l in links %}
-      <a href="/#{{l | slug}}" class="px-4 text-lg font-semibold uppercase">{{ l }}</a>
+      <a href="/#{{l | slug}}" class="px-4 text-xl font-semibold uppercase">{{ l }}</a>
       {% endfor %}
       <!-- Pages / -->
       {% assign links = "encuentros, talleres, juegos" | split: ', ' %}
       {% for l in links %}
-      <a href="/{{l | slug}}" class="px-4 text-lg font-semibold uppercase">{{ l }}</a>
+      <a href="/{{l | slug}}" class="px-4 text-xl font-semibold uppercase">{{ l }}</a>
       {% endfor %}
     </nav>
     <!-- Right -->
