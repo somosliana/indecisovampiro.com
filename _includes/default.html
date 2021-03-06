@@ -8,10 +8,10 @@
   <link href="https://fonts.googleapis.com/css?family=Barlow Condensed" rel="stylesheet">
   <link rel="stylesheet" href="/tailwind.css" />
   <script src="/alpine.js" defer></script>
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   <!--
-  -->
   <link rel="stylesheet" href="/static/debug.css" />
+  -->
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   <style>
 
   </style>
@@ -21,6 +21,8 @@
   {% include _header.html %}
   {{ content }}
   {% include _footer.html %}
+  <!--
+  -->
   <script>
     if (window.netlifyIdentity) {
       window.netlifyIdentity.on("init", user => {

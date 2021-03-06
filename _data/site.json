@@ -7,12 +7,13 @@
   "instagram": "https://www.instagram.com/indecisovampiro",
   "spotify": "https://open.spotify.com/user/shti52s949jw7tn1szo5go0uv",
   "email": "mailto:indecisovampiro@gmail.com",
+  "icons": [
+    { "title": "Youtube", "icon": "youtube", "href":"https://www.youtube.com/channel/UCSgiioP7m9Qgi3mfa_zb51g" },
+    { "title": "Instagram", "icon": "instagram", "href":"https://www.instagram.com/indecisovampiro" }
+  ],
   "navbar": [
-    "Musica",
-    "Audiovisuales",
-    "Editorial",
-    "Encuentros",
-    "Talleres",
-    "Juegos"
+    { "title": "Musica", "href": "/#musica"},
+    { "title": "Audiovisuales", "href": "/#audiovisuales"},
+    { "title": "Editorial", "href": "/#editorial"}
   ]
 }

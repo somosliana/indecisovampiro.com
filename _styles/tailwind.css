@@ -15,7 +15,11 @@ body {
 svg {
   @apply fill-current;
 }
-section {
-  @apply px-5 py-24 sm:px-20 sm:py-24;
-}
 @tailwind utilities;
+.x {
+  @apply px-4 sm:px-16 gap-8 sm:gap-16 max-w-screen-lg mx-auto;
+}
+
+.y {
+  @apply py-16 sm:py-24 gap-8 sm:gap-16 max-w-screen-lg mx-auto;
+}

@@ -2,7 +2,7 @@
 <div class="px-20 m-auto border-t-2" style="max-width: calc(1024px - 5rem * 2); border-color: #1DB954;"></div>
 
 <!-- Section -->
-<section class="flex flex-col items-center justify-center max-w-screen-lg gap-12 pb-12 mx-auto">
+<section class="flex flex-col items-center justify-center max-w-screen-lg gap-16 px-8 py-16 mx-auto sm:py-24 sm:px-16">
   <!-- Desktop -->
   <div class="items-stretch justify-around hidden gap-16 sm:flex">
     <!-- Left -->
@@ -38,7 +38,7 @@
   </div>
 
   <!-- Grid -->
-  <div class="grid grid-cols-3 gap-2 sm:grid-cols-6 sm:gap-x-4 sm:gap-y-8">
+  <div class="grid grid-cols-3 gap-2 sm:grid-cols-6 sm:gap-4">
     {% for p in playlists.playlists limit:12 %}
     <a href="{{ p.url }}">
       <img src="{{ p.imagen }}" alt="{{ p.titulo }}">

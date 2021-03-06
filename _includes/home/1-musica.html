@@ -1,34 +1,47 @@
-<!-- Separador -->
-<section id="musica" class="max-w-screen-lg px-0 mx-auto">
-  <div class="h-24 bg-center bg-no-repeat bg-cover" style="background-image: url('/static/images/separador.png');">
-</section>
-
 <!-- Radio en Vivo -->
-<section
-  class="grid max-w-screen-lg grid-cols-1 gap-12 mx-auto sm:grid sm:grid-cols-2 sm:grid-rows-2 sm:grid-flow-col">
-  <!-- Titulo -->
+<section class="x y flex flex-col">
+  <!-- Arriba -->
   <div class="flex items-center justify-center">
-    <img class="" src="/static/images/stubs/radio-en-vivo.png" alt="">
+    <img class="w-56 sm:hidden" src="/static/images/radio-vampira.png" alt="">
+    <img class="hidden sm:block" src="/static/images/radio-vampira.svg" alt="">
   </div>
-  <!-- Radio -->
-  <div class="flex items-center justify-center">
+  <!-- Abajo -->
+  <div class="flex flex-col items-center justify-around gap-16 sm:gap-0 sm:flex-row">
+    <img class="" src="/static/images/stubs/radio-en-vivo.png" alt="">
     {% include home/_radio-widget.html %}
   </div>
- 
 </section>
 
 <!-- Bajate la App -->
-{% include home/_bajate-la-app.html %}
-
-<!-- Radio Vampira -->
-<section class="flex items-center justify-center max-w-screen-lg py-10 mx-auto">
-  <img class="hidden sm:block" src="/static/images/radio-vampira.svg" alt="">
-  <img class="block w-56 sm:hidden" src="/static/images/radio-vampira.png" alt="">
+<!-- Mobile -->
+<section class="flex flex-col items-center justify-center max-w-screen-lg gap-8 py-16 mx-auto sm:hidden"
+  style="background: linear-gradient(to bottom, transparent 0%, transparent 40%, #0E4056 40%, #0E4056 60%, transparent 60%);">
+  <img class="" src="/static/images/stubs/bajate-la-app.png" alt="">
+  <img class="w-2/3" src="/static/images/app.png" alt="">
+  <a class="flex items-center justify-center w-2/3" href="{{ site.google-play }}">
+    <img src="/static/images/buttons/google-play-badge.png" alt="">
+  </a>
+</section>
+<!-- Desktop -->
+<section class="hidden py-16 sm:block"
+  style="background: linear-gradient(to bottom, transparent 0%, transparent 30%, #0E4056 30%, #0E4056 70%, transparent 70%);">
+  <div class="flex items-center justify-between max-w-screen-lg gap-4 px-20 mx-auto">
+    <div class="flex items-center gap-4">
+      <img class="w-1/4" src="/static/images/app.png" alt="">
+      <div class="">
+        <h1 class="text-3xl font-semibold uppercase md:text-5xl" style="color: #3FA9F5">Bajate la app</h1>
+        <h2 class="text-base md:text-xl">Y seguí escuchando Radio Vampira en todas partes.</h2>
+      </div>
+    </div>
+    <a class="flex items-center justify-center w-56" href="{{ site.google-play }}">
+      <img src="/static/images/buttons/google-play-badge.png" alt="">
+    </a>
+  </div>
 </section>
 
 <!-- Programacion -->
-<section class="flex flex-col max-w-screen-lg gap-4 mx-auto">
-  <h1 class="text-2xl font-semibold text-gray-700 uppercase md:text-5xl">Programación Indecisa</h1>
+<section class="x y flex flex-col">
+  <h1 class="text-3xl font-semibold text-gray-700 uppercase md:text-5xl">Programación Indecisa</h1>
   <div class="grid grid-cols-2 gap-1 sm:grid-cols-4 sm:gap-4">
     {% for programa in programacion.programacion %}
       <a href="/programas/{{ programa.titulo | slug }}/">
@@ -38,13 +51,58 @@
   </div>
 </section>
 
-<!-- Streaming -->
-{% include home/_streaming.html %}
+<!-- Separador -->
+<div class="px-20 m-auto border-t-2" style="max-width: calc(1024px - 5rem * 2); border-color: #1DB954;"></div>
 
-<!-- Boton -->
-<div class="max-w-screen-lg mx-auto">
-  <a class="block pr-5 sm:pr-20" href="{{ site.spotify }}">
-    <div class="h-12 bg-right bg-no-repeat bg-cover sm:h-16" style="background-image: url('/static/images/stubs/spotify.png');">
+<!-- Streaming -->
+<section class="y flex flex-col items-stretch justify-center">
+  <div class="x flex flex-col">
+    <!-- Desktop -->
+    <div class="items-stretch justify-around hidden gap-16 sm:flex">
+      <!-- Widget Playlist -->
+      <div class="flex items-center justify-center">
+        <iframe src="https://open.spotify.com/embed/playlist/1iSMIpcONhHVZN0DTmS2kV" width="300" height="315"
+        frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      </div>
+
+      <!-- Descripcion -->
+      <div class="flex flex-col justify-around">
+        <!-- Top -->
+        <div class="flex flex-col">
+          <h1 class="text-2xl font-semibold text-gray-700 uppercase md:text-5xl">Streaming Indeciso</h1>
+          <p class="px-6 text-lg">¿Sólo escuchas cosas en Spotify? También estamos ahí con la selección de música vampira.
+          Podés encontrarlas en nuestra cuenta y las actualizamos constantemente.</p>
+        </div>
+        <!-- Bottom -->
+        <div class="flex items-center justify-center">
+          <img class="px-6" src="/static/images/stubs/nuestras-playlists.png" alt="">
+        </div>
+      </div>
     </div>
-  </a>
-</div>
+    <!-- Mobile -->
+    <div class="flex flex-col items-center justify-center gap-8 sm:hidden">
+      <!-- Top -->
+      <div class="flex flex-col">
+        <h1 class="text-3xl font-semibold text-gray-700 uppercase">Streaming Indeciso</h1>
+        <p class="px-4">¿Sólo escuchas cosas en Spotify? También estamos ahí con la selección de música vampira.
+        Podés encontrarlas en nuestra cuenta y las actualizamos constantemente.</p>
+      </div>
+      <!-- Bottom -->
+      <img src="/static/images/stubs/nuestras-playlists.png" alt="">
+    </div>
+    <!-- Grid -->
+    <div class="grid grid-cols-3 gap-2 sm:grid-cols-6 sm:gap-4">
+      {% for p in playlists.playlists limit : 12 %}
+        <a href="{{ p.url }}">
+          <img src="{{ p.imagen }}" alt="{{ p.titulo }}">
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+  <!-- Button -->
+  <div class="w-full">
+    <a class="block pr-5 sm:pr-20" href="{{ site.spotify }}">
+      <div class="h-12 bg-right bg-no-repeat bg-cover sm:h-16" style="background-image: url('/static/images/stubs/spotify.png');"></div>
+    </a>
+  </div>
+</section>
