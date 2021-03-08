@@ -1,12 +1,15 @@
 const fs = require("fs");
 
 module.exports = function (eleventyConfig) {
+  // CSS
   eleventyConfig.addWatchTarget("_site/tailwind.css");
-
+  // JS
   eleventyConfig.addPassthroughCopy({
     "node_modules/alpinejs/dist/alpine.js": "alpine.js",
+    "node_modules/fitty/dist/fitty.min.js": "fitty.js"
   });
-
+  
+  // Vectors
   eleventyConfig.addPassthroughCopy({
     "node_modules/@fortawesome/fontawesome-free/sprites": "static/sprites",
   });
