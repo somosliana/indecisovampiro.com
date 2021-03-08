@@ -1,41 +1,37 @@
 <!-- Radio en Vivo -->
 <section id="musica" class="x y grid grid-cols-1 sm:grid-cols-2 items-center justify-around">
+  <!-- Logo -->
   <div class="flex items-center justify-center sm:col-span-2">
     <img class="sm:hidden" src="/static/images/radio-vampira.png" alt="">
     <img class="hidden sm:block" src="/static/images/radio-vampira.svg" alt="">
   </div>
+  <!-- Title -->
   <div class="w-full my-16">
     <h1 class="fit font-bold leading-4">RADIO EN VIVO</h1>
     <h2 class="fit text-blue-500">PODCAST // MÚSICA INDECISA // RUIDO</h2>
   </div>
+  <!-- Widget -->
   <div class="flex items-center justify-center">
     {% include home/_radio-widget.html %}
   </div>
 </section>
 
 <!-- Bajate la App -->
-<!-- Mobile -->
-<section class="flex flex-col items-center justify-center max-w-screen-lg gap-8 py-16 mx-auto sm:hidden"
-  style="background: linear-gradient(to bottom, transparent 0%, transparent 40%, #0E4056 40%, #0E4056 60%, transparent 60%);">
-  <img class="" src="/static/images/stubs/bajate-la-app.png" alt="">
-  <img class="w-2/3" src="/static/images/app.png" alt="">
-  <a class="flex items-center justify-center w-2/3" href="{{ site.google-play }}">
-    <img src="/static/images/buttons/google-play-badge.png" alt="">
-  </a>
-</section>
-<!-- Desktop -->
-<section class="hidden py-16 sm:block"
-  style="background: linear-gradient(to bottom, transparent 0%, transparent 30%, #0E4056 30%, #0E4056 70%, transparent 70%);">
-  <div class="flex items-center justify-between max-w-screen-lg gap-4 px-20 mx-auto">
-    <div class="flex items-center gap-4">
-      <img class="w-1/4" src="/static/images/app.png" alt="">
-      <div class="">
-        <h1 class="text-3xl font-semibold uppercase md:text-5xl" style="color: #3FA9F5">Bajate la app</h1>
-        <h2 class="text-base md:text-xl">Y seguí escuchando Radio Vampira en todas partes.</h2>
+<section class=""
+  style="background: linear-gradient(to bottom, transparent 0%, transparent 25%, #0E4056 25%, #0E4056 75%, transparent 75%);">
+  <div class="x flex flex-col items-center justify-center sm:flex-row">
+    <!-- Titulo -->
+    <div class="w-full sm:order-2">
+      <div class="w-4/5">
+        <h1 class="fit font-bold leading-4 text-blue-500">BAJATE LA APP</h1>
       </div>
+      <h2 class="fit" >Y seguí escuchando Radio Vampira en todas partes.</h2>
     </div>
-    <a class="flex items-center justify-center w-56" href="{{ site.google-play }}">
-      <img src="/static/images/buttons/google-play-badge.png" alt="">
+    <!-- Imagen -->
+    <img class="w-52 sm:order-1" src="/static/images/app.png" alt="">
+    <!-- Boton -->
+    <a class="flex items-center justify-center w-2/3 sm:order-3" href="{{ site.google-play }}">
+      <img class="w-48" src="/static/images/buttons/google-play-badge.png" alt="">
     </a>
   </div>
 </section>
