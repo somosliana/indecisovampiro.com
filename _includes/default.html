@@ -5,11 +5,10 @@
     <title>{{ title }}</title>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
-    <link href="https://fonts.googleapis.com/css?family=Barlow Condensed" rel="stylesheet">
     <link href="/tailwind.css" rel="stylesheet"/>
     <script src="/alpine.js" defer></script>
     {% if env.environment == "development" %}
-      <link href="/static/debug.css"rel="stylesheet"/>
+    <link href="/static/debug.css"rel="stylesheet"/>
     {% endif %}
   </head>
 
@@ -23,7 +22,7 @@
     <script>fitty('.fit');</script>
     <!-- Netlify Identity -->
     {% if path == "home" %}
-      <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     {% endif %}
   </body>
 
