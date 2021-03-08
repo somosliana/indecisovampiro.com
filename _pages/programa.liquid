@@ -6,19 +6,19 @@ pagination:
     alias: programa
 permalink: "programas/{{ programa.titulo | slug }}/"
 ---
-<!-- Radio Vampira -->
-<section class="flex items-center justify-center max-w-screen-lg py-10 mx-auto">
+<!-- Logo -->
+<section class="y flex items-center justify-center">
   <img class="hidden sm:block" src="/static/images/radio-vampira.svg" alt="">
   <img class="block w-56 sm:hidden" src="/static/images/radio-vampira.png" alt="">
 </section>
 
 <!-- Card -->
-<section class="flex flex-col justify-around max-w-screen-lg py-24 mx-auto pt-14 sm:flex-row gap-7 sm:gap-14">
+<section class="x y flex flex-col justify-around sm:flex-row">
   <!-- Imagen -->
-  <img class="sm:w-2/5" src="{{ programa.imagen }}" alt="">
+  <img class="max-w-md" src="{{ programa.imagen }}" alt="">
   <!-- Descripcion -->
   <div class="flex flex-col justify-between gap-4 my-4">
-    <!-- Top -->
+    <!-- Titulo/Subtitulo -->
     <div class="flex flex-col gap-4">
       <!-- Header -->
       <div class="border-b-2 border-blue-900">
@@ -27,14 +27,16 @@ permalink: "programas/{{ programa.titulo | slug }}/"
         <h3 class="text-2xl text-blue-800 uppercase sm:text-3xl">{% for t in programa.tags %}#{{t}} {% endfor %}</h3>
       </div>
       <!-- Paragraph-->
-      <p class="text-base">{{ programa.descripcion }}</p>
+      <p class="text-base text-justify">{{ programa.descripcion }}</p>
     </div>
-    <!-- Bottom -->
+    <!-- Autor/Compartir -->
     <div class="flex items-end justify-between">
+      <!-- Autor -->
       <div class="flex flex-col">
-        <p class="text-base">Musicalización: {{ programa.musicalizacion }}</p>
-        <p class="text-base">Contacto: {{ programa.contacto }}</p>
+        <p class="text-base"><strong>Musicalización</strong>: {{ programa.musicalizacion }}</p>
+        <p class="text-base"><strong>Contacto</strong>: {{ programa.contacto }}</p>
       </div>
+      <!-- Compartir -->
       <div class="flex flex-col gap-2">
         <p class="text-base text-right border-b-2 border-blue-900">Compartir</p>
         <div class="flex gap-2">
