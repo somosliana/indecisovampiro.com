@@ -21,7 +21,6 @@ module.exports = {
     extend: {},
   },
   plugins: [
-    require("tailwindcss-debug-screens"),
     require("tailwindcss-responsive-embed"),
     require("tailwindcss-aspect-ratio"),
   ],
