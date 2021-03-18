@@ -14,7 +14,7 @@
   ],
   "navbar": [
     { "title": "Musica", "href": "/#musica"},
-    { "title": "Audiovisuales", "href": "/#audiovisuales"},
+    { "title": "Audiovisual", "href": "/#audiovisual"},
     { "title": "Editorial", "href": "/#editorial"}
   ]
 }
