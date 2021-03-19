@@ -17,7 +17,7 @@ module.exports = function (config) {
   })
 
   // Config!
-  config.setBrowserSyncConfig(require('./lib/notFound'))
+  config.setBrowserSyncConfig(require('./lib/browsersyncConfig'))
   config.addTransform('minifyHtml', require('./lib/minifyHtml'))
 
   return {
