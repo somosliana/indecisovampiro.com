@@ -1,38 +1,24 @@
-const fs = require("fs");
+module.exports = function (config) {
+  // Watch!
+  config.addWatchTarget("_site/tailwind.css");
 
-module.exports = function (eleventyConfig) {
-  // CSS
-  eleventyConfig.addWatchTarget("_site/tailwind.css");
-  // JS
-  eleventyConfig.addPassthroughCopy({
+  // Copy!
+  // Favicon
+  config.addPassthroughCopy({ "static/favicon.ico": "favicon.ico" });
+  // Static
+  config.addPassthroughCopy("static");
+  // Netlify CMS
+  config.addPassthroughCopy("admin");
+  // Vendor
+  config.addPassthroughCopy({
     "node_modules/alpinejs/dist/alpine.js": "alpine.js",
-    "node_modules/fitty/dist/fitty.min.js": "fitty.js"
-  });
-  
-  // Vectors
-  eleventyConfig.addPassthroughCopy({
-    "node_modules/@fortawesome/fontawesome-free/sprites": "static/sprites",
+    "node_modules/fitty/dist/fitty.min.js": "fitty.js",
+    "node_modules/@fortawesome/fontawesome-free/sprites": "static/sprites"
   });
 
-  eleventyConfig.addPassthroughCopy("static");
-  eleventyConfig.addPassthroughCopy("favicon.ico");
-
-  eleventyConfig.addPassthroughCopy("admin");
-
-
-  // 404 support in `eleventy serve`
-  eleventyConfig.setBrowserSyncConfig({
-    callbacks: {
-     ready: function(err, bs) {
-       const content_404 = fs.readFileSync('_site/404.html');
-       bs.addMiddleware("*", (req, res) => {
-        // Provides the 404 content without redirect.
-        res.write(content_404);
-        res.end();
-      });
-     }
-    }
-  });
+  // Config!
+  config.setBrowserSyncConfig(require('./lib/notFound'));
+  config.addTransform('minifyHtml', require('./lib/minifyHtml'));
 
   return {
     dir: {
